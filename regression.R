@@ -1,0 +1,9 @@
+args<-commandArgs(T)
+data<-read.table(args[1],header=T)
+out<-summary(lm(exp~SV+SNP+gender+age,data=data))
+res<-(1-pf(out$fstatistic[1],out$fstatistic[2],out$fstatistic[3]))
+SV<-out$coef[2,1]
+SVp<-out$coef[2,4]
+SNP<-out$coef[3,1]
+SNPp<-out$coef[3,4]
+cat(res,SV,SVp,SNP,SNPp)
