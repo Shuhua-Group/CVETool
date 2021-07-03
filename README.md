@@ -9,7 +9,7 @@ CVETool does not need to be installed. You need to replace the software path in 
 
 ## Requirements
 
-Python 3 with pysam (0.8.3+) and NumPy (1.8.1+)
+Python 3
 
 Perl with List::Util
 
