@@ -132,16 +132,19 @@ then
 	TIMENOW=`date`
 	echo ${TIMENOW}"	Softname.sh complete!"
 else
-	echo "	CVETool.sh
-	[USAGE]
-	-b bam list file
-	-r root list file(option)
-	-r reference file
-	-v SV region
-	-p SNP position
-	-e gene expression file
-	-c covariates file
-	-n taskname
-	-t parallel task count
-	example: CVETool.sh -b bam.list -r human_g1k_v37.fasta -v 3:81595569-81599665 -p 3:81597974 -e exp.txt -c cov.txt -n taskname -t 10"
+	echo "usage:   CVETool.sh [options]
+
+Required arguments
+     -b FILE  sample ID & bam file (tab separated)
+     -e FILE  gene expression values (tab separated)
+     -c FILE  covariates values (tab separated)
+     -r FILE  reference file
+     -v chrN:pos1-pos2   SV region
+     -p chrN:pos1        SNP position
+Optional arguments
+     -r FILE  sample ID & bam file (tab separated)
+     -n       taskname
+     -t       parallel tasks
+   
+   example: CVETool.sh -b bam.list -r human_g1k_v37.fasta -v 3:81595569-81599665 -p 3:81597974 -e exp.txt -c cov.txt -n taskname -t 10"
 fi

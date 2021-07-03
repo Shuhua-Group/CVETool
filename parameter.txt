@@ -1,0 +1,5 @@
+python3="/yourdir/python3"
+perl="/yourdir/perl"
+Rscript="/yourdir/Rscript"
+freebayes="/yourdir/freebayes"
+cnvnator="/yourdir/cnvnator"
