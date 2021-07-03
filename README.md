@@ -7,12 +7,16 @@ It can accurately genotype the configuration and assumed an additive linear mode
 
 CVETool does not need to be installed. You need to replace the software path in the parameter.txt file with your own software path.
 
-Requirements
+## Requirements
 
 Python 3 with pysam (0.8.3+) and NumPy (1.8.1+)
+
 Perl with List::Util
+
 R with ggplot2, dplyr and forcats
+
 CNVnator
+
 freebayes
 
 ## CVETool usage
